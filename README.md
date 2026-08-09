@@ -75,9 +75,9 @@ efficiently.
 
 ## Selected impact
 
-- Scaled transaction processing to **25 million transactions per day** across as many as 20 member
+- Scaled transaction processing to **40 million transactions per day** across as many as 20 member
   clients.
-- Modernized a QR reporting system from approximately **1 million to 15 million daily
+- Modernized a QR reporting system from approximately **1 million to 30 million daily
   transactions**.
 - Reduced application memory usage from approximately **150 GB to below 1 GB** through query and
   in-memory processing optimization.
@@ -179,7 +179,7 @@ horizontal scalability.
 
 - Exploring machine-learning techniques for fraud clustering and transaction-pattern analysis.
 - Building consistent, reusable foundations for Java microservices.
-- Expanding my backend engineering experience into Go, NestJS and cloud-native service development.
+- Expanding my backend engineering experience into Go, NestJS, NoSQL data stores and cloud-native service development.
 - Expanding AI-Engineering for better experiece in software development lifecycle.
 
 ---
