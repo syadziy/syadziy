@@ -1,4 +1,4 @@
-## Hi there 👋
+## About Me 👋
 
 <!--
 **syadziy/syadziy** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -22,11 +22,33 @@ Proficient in Java 8–21, Spring Boot, Quarkus, PostgreSQL, Oracle, MySQL, and 
 
 Currently involved in developing a fraud detection system using Java, Python, ReactJS, and machine-learning approaches for fraud clustering. Familiar with AI-assisted development tools such as Cursor and Codex.
 
-- Tech Stack
-[![My Skills](https://skillicons.dev/icons?i=java,spring,maven,hibernate,php,laravel,js,react,postgres,html,css,kafka,redis,postman,vscode,gcp,git,gitlab,github,bitbucket,bash,kubernetes,docker,figma&theme=light,apple,linux,ubuntu)](https://skillicons.dev)
+## Tech Stack
 
+<p align="center">
+  <h4>Programming Language</h4>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=java,php,html,css,js,postgres" />
+  </a>
+  <h4>Framework</h4>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=spring,maven,hibernate,laravel,react" />
+  </a>
+  <h4>IDEA</h4>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=atom,vscode" />
+  </a>
+  <h4>Operating System</h4>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=apple,linux,ubuntu" />
+  </a>
+  <h4>Tools</h4>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=kafka,redis,postman,git,gitlab,github,bitbucket,kubernetes,docker" />
+  </a>
+</p>
 
-- 🌱 I’m currently learning ...
-Golang
-NestJS
-AI Engineering
+## 🌱 I’m currently learning ...
+
+1. Golang
+2. NestJS
+3. AI Engineering
