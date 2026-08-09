@@ -111,9 +111,9 @@ efficiently.
 
 ### DevOps, collaboration, and API tools
 
+![Microsoft Teams](https://img.shields.io/badge/Microsoft_Teams-6264A7?style=flat-square&logo=microsoftteams&logoColor=white)
 ![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white)
 ![Confluence](https://img.shields.io/badge/Confluence-172B4D?style=flat-square&logo=confluence&logoColor=white)
-![Microsoft Teams](https://img.shields.io/badge/Microsoft_Teams-6264A7?style=flat-square&logo=microsoftteams&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
 ![GitLab](https://img.shields.io/badge/GitLab-FC6D26?style=flat-square&logo=gitlab&logoColor=white)
 ![Bitbucket](https://img.shields.io/badge/Bitbucket-0052CC?style=flat-square&logo=bitbucket&logoColor=white)
@@ -180,7 +180,7 @@ horizontal scalability.
 - Exploring machine-learning techniques for fraud clustering and transaction-pattern analysis.
 - Building consistent, reusable foundations for Java microservices.
 - Expanding my backend engineering experience into Go, NestJS and cloud-native service development.
-- Expanding AI-Engineering for better experiece development lifecycle.
+- Expanding AI-Engineering for better experiece in software development lifecycle.
 
 ---
 
