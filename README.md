@@ -27,7 +27,7 @@ Currently involved in developing a fraud detection system using Java, Python, Re
 <p align="center">
   <h4>Programming Language</h4>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=java,php,html,css,js,postgres&theme=light" />
+    <img src="https://skillicons.dev/icons?i=java,php,html,css,js&theme=light" />
   </a>
   <h4>Framework</h4>
   <a href="https://skillicons.dev">
@@ -43,7 +43,7 @@ Currently involved in developing a fraud detection system using Java, Python, Re
   </a>
   <h4>Tools</h4>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=kafka,redis,postman,git,gitlab,github,bitbucket,kubernetes,docker&theme=light" />
+    <img src="https://skillicons.dev/icons?i=postgres,kafka,redis,git,gitlab,github,bitbucket,kubernetes,docker,postman&theme=light" />
   </a>
 </p>
 
