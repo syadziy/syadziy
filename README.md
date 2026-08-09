@@ -27,23 +27,23 @@ Currently involved in developing a fraud detection system using Java, Python, Re
 <p align="center">
   <h4>Programming Language</h4>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=java,php,html,css,js,postgres" />
+    <img src="https://skillicons.dev/icons?i=java,php,html,css,js,postgres&theme=light" />
   </a>
   <h4>Framework</h4>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=spring,maven,hibernate,laravel,react" />
+    <img src="https://skillicons.dev/icons?i=spring,maven,hibernate,laravel,react&theme=light" />
   </a>
   <h4>IDEA</h4>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=atom,vscode" />
+    <img src="https://skillicons.dev/icons?i=atom,vscode&theme=light" />
   </a>
   <h4>Operating System</h4>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=apple,linux,ubuntu" />
+    <img src="https://skillicons.dev/icons?i=apple,linux,ubuntu&theme=light" />
   </a>
   <h4>Tools</h4>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=kafka,redis,postman,git,gitlab,github,bitbucket,kubernetes,docker" />
+    <img src="https://skillicons.dev/icons?i=kafka,redis,postman,git,gitlab,github,bitbucket,kubernetes,docker&theme=light" />
   </a>
 </p>
 
