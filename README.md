@@ -131,10 +131,10 @@ efficiently.
 
 ![Cursor](https://img.shields.io/badge/Cursor-000000?style=flat-square&logo=cursor&logoColor=white)
 ![OpenAI Codex](https://img.shields.io/badge/OpenAI_Codex-412991?style=flat-square&logo=openai&logoColor=white)
-![RTX](https://img.shields.io/badge/RTX-Codex_Workflow-1F6FEB?style=flat-square)
-![ICM](https://img.shields.io/badge/ICM-Codex_Workflow-1F6FEB?style=flat-square)
-![CaveMan](https://img.shields.io/badge/CaveMan-Codex_Workflow-1F6FEB?style=flat-square)
-![QMD](https://img.shields.io/badge/QMD-Codex_Workflow-1F6FEB?style=flat-square)
+![RTK](https://img.shields.io/badge/RTK-Cursor_Workflow-000000?style=flat-square)
+![ICM](https://img.shields.io/badge/ICM-Cursor_Workflow-1F6FEB?style=flat-square)
+![CaveMan](https://img.shields.io/badge/CaveMan-Cursor_Workflow-1F6FEB?style=flat-square)
+![QMD](https://img.shields.io/badge/QMD-Cursor_Workflow-1F6FEB?style=flat-square)
 
 ### Operating systems
 
