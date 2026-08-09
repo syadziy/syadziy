@@ -133,7 +133,7 @@ efficiently.
 ![OpenAI Codex](https://img.shields.io/badge/OpenAI_Codex-412991?style=flat-square&logo=openai&logoColor=white)
 ![RTK](https://img.shields.io/badge/RTK-Cursor_Workflow-000000?style=flat-square)
 ![ICM](https://img.shields.io/badge/ICM-Cursor_Workflow-1F6FEB?style=flat-square)
-![CaveMan](https://img.shields.io/badge/CaveMan-Cursor_Workflow-1F6FEB?style=flat-square)
+![CaveMan](https://img.shields.io/badge/CaveMan-Cursor_Workflow-000000?style=flat-square)
 ![QMD](https://img.shields.io/badge/QMD-Cursor_Workflow-1F6FEB?style=flat-square)
 
 ### Operating systems
