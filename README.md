@@ -146,6 +146,20 @@ efficiently.
 
 ## Featured projects
 
+### [User Management](https://github.com/syadziy/usermanagement)
+
+A multi-tenant identity and authorization service built with Java 21 and Spring Boot. It provides
+tenant registration, username/password authentication, tenant-specific token policies, granular
+role-based permissions, and RS256 JWT issuance with discovery metadata and public JWKS. It serves
+as the primary token issuer for the API Gateway and microservices that use SDK Util.
+
+### [Control Room — Web App](https://github.com/syadziy/web_app)
+
+A responsive ReactJS operations dashboard for managing identity and access, scheduled HTTP tasks,
+centralized alerts, and audit events. The application uses reusable UI components, in-memory
+authentication state, a domain-oriented service layer, and a single API Gateway entry point for
+all backend communication.
+
 ### [SDK Util](https://github.com/syadziy/sdk_util)
 
 A reusable Spring Boot foundation for consistent API responses, global exception handling, JWT
@@ -180,8 +194,9 @@ horizontal scalability.
 
 - Exploring machine-learning techniques for fraud clustering and transaction-pattern analysis.
 - Building consistent, reusable foundations for Java microservices.
+- Developing a multi-tenant identity platform and a centralized ReactJS operations dashboard.
 - Expanding my backend engineering experience into Go, NestJS, NoSQL data stores and cloud-native service development.
-- Expanding AI-Engineering for better experiece in software development lifecycle.
+- Expanding my AI engineering practice to improve the software development lifecycle.
 
 ---
 
