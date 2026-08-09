@@ -111,6 +111,9 @@ efficiently.
 
 ### DevOps, collaboration, and API tools
 
+![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white)
+![Confluence](https://img.shields.io/badge/Confluence-172B4D?style=flat-square&logo=confluence&logoColor=white)
+![Microsoft Teams](https://img.shields.io/badge/Microsoft_Teams-6264A7?style=flat-square&logo=microsoftteams&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
 ![GitLab](https://img.shields.io/badge/GitLab-FC6D26?style=flat-square&logo=gitlab&logoColor=white)
 ![Bitbucket](https://img.shields.io/badge/Bitbucket-0052CC?style=flat-square&logo=bitbucket&logoColor=white)
@@ -123,6 +126,15 @@ efficiently.
 ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ_IDEA-000000?style=flat-square&logo=intellijidea&logoColor=white)
 ![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
 ![Atom](https://img.shields.io/badge/Atom-66595C?style=flat-square&logo=atom&logoColor=white)
+
+### AI-assisted development
+
+![Cursor](https://img.shields.io/badge/Cursor-000000?style=flat-square&logo=cursor&logoColor=white)
+![OpenAI Codex](https://img.shields.io/badge/OpenAI_Codex-412991?style=flat-square&logo=openai&logoColor=white)
+![RTX](https://img.shields.io/badge/RTX-Codex_Workflow-1F6FEB?style=flat-square)
+![ICM](https://img.shields.io/badge/ICM-Codex_Workflow-1F6FEB?style=flat-square)
+![CaveMan](https://img.shields.io/badge/CaveMan-Codex_Workflow-1F6FEB?style=flat-square)
+![QMD](https://img.shields.io/badge/QMD-Codex_Workflow-1F6FEB?style=flat-square)
 
 ### Operating systems
 
@@ -165,11 +177,10 @@ horizontal scalability.
 
 ## Current focus
 
-- Exploring new programming language like Go, NestJS.
-- Exploring AI-Engineering for better experiece development lifecycle.
 - Exploring machine-learning techniques for fraud clustering and transaction-pattern analysis.
 - Building consistent, reusable foundations for Java microservices.
-- Expanding my backend engineering experience into Go and cloud-native service development.
+- Expanding my backend engineering experience into Go, NestJS and cloud-native service development.
+- Expanding AI-Engineering for better experiece development lifecycle.
 
 ---
 
