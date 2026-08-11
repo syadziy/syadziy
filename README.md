@@ -149,12 +149,32 @@ efficiently.
 
 ## Featured projects
 
+Together, these repositories form a multi-tenant operations platform with a single secured API
+entry point, asynchronous Kafka-based observability, horizontally scalable workers, and a shared
+Spring Boot service foundation.
+
+```text
+React Control Room
+       |
+       v
+API Gateway ---- audit events --------> Kafka ----> Audit Log
+       |------- request/response logs -> Kafka ----> Centralized Log
+       |
+       +----> User Management / Scheduler / Centralized Alert
+                                      |
+                                      +----> STOMP WebSocket notifications
+```
+
 ### [User Management](https://github.com/syadziy/usermanagement)
 
 A multi-tenant identity and authorization service built with Java 21 and Spring Boot. It provides
 tenant registration, username/password authentication, tenant-specific token policies, granular
 role-based permissions, and RS256 JWT issuance with discovery metadata and public JWKS. It serves
-as the primary token issuer for the API Gateway and microservices that use SDK Util.
+as the primary token issuer for the API Gateway and downstream services. Tenant onboarding creates
+an isolated permission catalog and first `SUPERADMIN` owner, while users can hold multiple roles
+and custom `resource:action` permissions. JDBC-bound HTTP workloads use Spring Boot virtual
+threads, PostgreSQL/Flyway provides durable state, and login auditing is published asynchronously
+to Kafka without exposing credentials or tokens.
 
 ### [Control Room — Web App](https://github.com/syadziy/web_app)
 
@@ -170,34 +190,73 @@ uses server-side `limit`/`offset` pagination so each page transition retrieves f
 ### [SDK Util](https://github.com/syadziy/sdk_util)
 
 A reusable Spring Boot foundation for consistent API responses, global exception handling, JWT
-security, OpenAPI, ECS structured logging, trace IDs, MDC propagation, and operational standards.
+security and method authorization, OpenAPI, ECS structured logging, trace IDs, MDC propagation,
+timezone policy, and operational standards. It provides shared `ResponseHelper` and
+`ResponsePagingHelper` envelopes plus conditional auto-configuration so servlet services use the
+same error, security, observability, and pagination contracts without duplicating infrastructure
+code.
 
 ### [Centralized Alert](https://github.com/syadziy/centralized_alert)
 
-A centralized alert-delivery service designed to provide consistent error notification across
-multiple services.
+A horizontally scalable alert-delivery service accepting idempotent requests through REST or
+Kafka. It supports database-managed global/per-source recipients, TO/CC/BCC delivery, TEXT/HTML
+messages, scheduled and manual dispatch, attachment metadata, exponential retry, Kafka DLT, and
+email delivery history. PostgreSQL leases and safe claims coordinate multiple replicas, while
+SMTP dispatch uses bounded Java virtual-thread concurrency. Successful events can be delivered to
+the dashboard through authenticated STOMP over WebSocket.
 
 ### [Scheduler](https://github.com/syadziy/scheduler)
 
 A scalable HTTP task scheduler with durable executions, retries, execution history, parallel and
-serial groups, and nested task groups.
+serial groups, and nested task groups. PostgreSQL occurrence records, leases, and
+`FOR UPDATE SKIP LOCKED` make execution safe across replicas and recover abandoned work. Bounded
+Java virtual threads execute HTTP tasks without allowing unbounded downstream concurrency, while
+history can be filtered by date/range, task, group, and threshold breach. Threshold and terminal
+errors are sent to Centralized Alert, and API activity is audited once at the gateway to avoid
+duplicate events.
 
 ### [Audit Log](https://github.com/syadziy/audit_log)
 
-An append-only audit service for recording and querying user and system activity, with Kafka-based
-event ingestion and production-oriented observability.
+An append-only Java audit service that validates and consumes user-activity events from Kafka,
+persists them idempotently in PostgreSQL JSONB, and exposes authenticated read-only investigation
+APIs with server-side filters and pagination. Record acknowledgement follows durable persistence;
+transient failures are retried and exhausted events go to a DLT. Consumer groups and unique event
+IDs allow horizontal scaling without duplicate rows, while HTTP and terminal Kafka failures can
+notify Centralized Alert. Production business code is protected by a 90% JaCoCo coverage gate.
 
 ### [API Gateway](https://github.com/syadziy/api_gateway)
 
-An API gateway foundation focused on authentication, routing, load balancing, resilience, and
-horizontal scalability, including asynchronous user-activity and request/response event publishing
-through Kafka.
+A stateless reactive edge service built with Spring Cloud Gateway, WebFlux, and Reactor Netty. It
+validates issuer/audience/expiry and granular JWT scopes, applies Redis rate limits, circuit
+breakers, bulkheads, request deadlines, safe idempotent retries, exact-origin CORS, secure headers,
+and platform/VIP load balancing. Downstream outages are normalized as service-unavailable gateway
+responses. Audit and centralized request/response logging are independently controlled by
+environment flags and published asynchronously to Kafka; sensitive fields are sanitized, actor
+identity uses the JWT username, and WebSocket traffic is intentionally excluded from audit events.
 
 ### [Centralized Log](https://github.com/syadziy/centralized_log)
 
 A horizontally scalable Go service for centralized API Gateway request and response logging. It
 consumes events through a Kafka consumer group, stores them idempotently in PostgreSQL, and moves
-records older than 30 days into an archive table using concurrency-safe housekeeping.
+records older than 30 days into an archive table using batch-based, concurrency-safe housekeeping.
+Goroutines run Kafka consumption, health endpoints, and housekeeping independently; PostgreSQL
+advisory locking and `FOR UPDATE SKIP LOCKED` ensure only one replica archives a batch while all
+other replicas continue consuming. Logging stays outside the synchronous request path, and body/
+header sanitization prevents credentials, tokens, cookies, and other secrets from being retained.
+
+## Platform engineering highlights
+
+- **Security:** multi-tenant RS256 JWT, issuer/audience validation, granular permissions, and
+  permission-aware frontend navigation and actions.
+- **Concurrency:** Reactor Netty event loops at the gateway, Java virtual threads with database or
+  semaphore bounds for identity, scheduling, and alert I/O, Kafka consumer groups for audit
+  ingestion, and Go goroutines for centralized logging.
+- **Horizontal scaling:** stateless gateway routing, PostgreSQL lease/claim patterns, Kafka
+  partition ownership, idempotency keys, unique event IDs, and concurrency-safe housekeeping.
+- **Observability:** trace propagation, ECS logs, Prometheus metrics, append-only user auditing,
+  sanitized request/response logging, realtime notifications, and standardized error envelopes.
+- **Operational safety:** graceful shutdown, health probes, retry/DLT policies, bounded connection
+  pools, database migrations, and feature flags for audit and centralized logging integrations.
 
 ## Engineering interests
 
@@ -207,8 +266,9 @@ records older than 30 days into an archive table using concurrency-safe housekee
 ## Current focus
 
 - Exploring machine-learning techniques for fraud clustering and transaction-pattern analysis.
-- Building consistent, reusable foundations for Java microservices.
-- Developing a multi-tenant identity platform and a centralized ReactJS operations dashboard.
+- Building consistent, reusable foundations for Java, Go, Kafka, and PostgreSQL microservices.
+- Developing a permission-aware multi-tenant operations platform with centralized auditing,
+  request/response logging, scheduling, alert delivery, and realtime monitoring.
 - Expanding my backend engineering experience into Go, NestJS, NoSQL data stores and cloud-native service development.
 - Expanding my AI engineering practice to improve the software development lifecycle.
 
