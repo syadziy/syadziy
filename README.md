@@ -91,6 +91,7 @@ efficiently.
 ![Java](https://img.shields.io/badge/Java_8--21-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
 ![Quarkus](https://img.shields.io/badge/Quarkus-4695EB?style=flat-square&logo=quarkus&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
@@ -185,7 +186,14 @@ event ingestion and production-oriented observability.
 ### [API Gateway](https://github.com/syadziy/api_gateway)
 
 An API gateway foundation focused on authentication, routing, load balancing, resilience, and
-horizontal scalability. Including logging activiy from user (base on API req) via Kafka
+horizontal scalability, including asynchronous user-activity and request/response event publishing
+through Kafka.
+
+### [Centralized Log](https://github.com/syadziy/centralized_log)
+
+A horizontally scalable Go service for centralized API Gateway request and response logging. It
+consumes events through a Kafka consumer group, stores them idempotently in PostgreSQL, and moves
+records older than 30 days into an archive table using concurrency-safe housekeeping.
 
 ## Engineering interests
 
