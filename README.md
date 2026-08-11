@@ -161,7 +161,11 @@ as the primary token issuer for the API Gateway and microservices that use SDK U
 A responsive ReactJS operations dashboard for managing identity and access, scheduled HTTP tasks,
 centralized alerts, and audit events. The application uses reusable UI components, in-memory
 authentication state, a domain-oriented service layer, and a single API Gateway entry point for
-all backend communication.
+all backend communication. Its permission-aware interface covers tenant onboarding, user/role/
+permission management, scheduler configuration and filtered execution history, recipient setup,
+email delivery history, realtime alert notifications, and audit exploration. The dashboard uses
+English by default, supports an Indonesian translation alongside light/dark/system themes, and
+uses server-side `limit`/`offset` pagination so each page transition retrieves fresh API data.
 
 ### [SDK Util](https://github.com/syadziy/sdk_util)
 
