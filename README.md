@@ -185,7 +185,7 @@ event ingestion and production-oriented observability.
 ### [API Gateway](https://github.com/syadziy/api_gateway)
 
 An API gateway foundation focused on authentication, routing, load balancing, resilience, and
-horizontal scalability.
+horizontal scalability. Including logging activiy from user (base on API req) via Kafka
 
 ## Engineering interests
 
