@@ -1,77 +1,23 @@
 ## About Me 👋
 
-<!--
-**syadziy/syadziy** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-
-<!-- I am a Senior Java Developer with 7+ years of experience developing enterprise applications, reporting platforms, payment reconciliation systems, and high-volume transaction processing solutions.
-Experienced across the software development lifecycle, including effort estimation, technical design, implementation, documentation, testing, deployment, production support, and system maintenance.
-
-Proficient in Java 8–21, Spring Boot, Quarkus, PostgreSQL, Oracle, MySQL, and ReactJS. Proven experience optimizing systems that process up to 25 million transactions per day and reducing application memory usage from approximately 150 GB to below 1 GB.
-
-Currently involved in developing a fraud detection system using Java, Python, ReactJS, and machine-learning approaches for fraud clustering. Familiar with AI-assisted development tools such as Cursor and Codex.
-
-## Tech Stack
-
-<p align="center">
-  <h4>Programming Language</h4>
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=java,php,html,css,js&theme=light" />
-  </a>
-  <h4>Framework</h4>
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=spring,maven,hibernate,laravel,react&theme=light" />
-  </a>
-  <h4>IDEA</h4>
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=atom,vscode&theme=light" />
-  </a>
-  <h4>Operating System</h4>
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=apple,linux,ubuntu&theme=light" />
-  </a>
-  <h4>Tools</h4>
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=postgres,kafka,redis,git,gitlab,github,bitbucket,kubernetes,docker,postman&theme=light" />
-  </a>
-</p>
-
-## 🌱 I’m currently learning ...
-
-1. Golang
-2. NestJS
-3. AI Engineering -->
-
 # Hi, I'm Arfin Syadziy Bairuha 👋
 
-Senior Java Developer based in Depok, Indonesia, focused on reliable backend systems,
-high-volume transaction processing, financial reporting, reconciliation, and fraud detection.
+Senior backend engineer based in Depok, Indonesia, with a strong focus on Java, distributed
+systems, financial reporting, reconciliation, and production-ready service design.
 
-I enjoy turning complex operational requirements into maintainable software—especially when the
-system must process millions of transactions, remain observable in production, and use resources
-efficiently.
+I enjoy turning complex operational requirements into maintainable software that stays observable, use resources efficiently, and reliable under heavy traffic.
 
-## What I work on
+## What I do
 
-- Building fraud-detection platforms with Java, Python, ReactJS, and machine-learning approaches
-  for transaction clustering and pattern analysis.
+- Build backend platforms for fraud detection, transaction processing, and financial reporting.
 - Designing financial reporting and automated reconciliation systems based on Mastercard,
   ISO 8583, B24, ASPI, and cross-border QR specifications.
 - Modernizing high-volume Java applications and improving their performance, reliability, and
   production operability.
 - Creating reusable service foundations for security, structured logging, tracing, error handling,
   auditing, scheduling, and alerting.
+- Create reusable boilerplates and shared foundations for backend teams.
+- Explore modern frameworks and language ecosystems such as Go, NestJS, PHP/Laravel, and AI-assisted development workflows.
 
 ## Selected impact
 
@@ -86,7 +32,7 @@ efficiently.
 
 ## Technology stack
 
-### Backend and application development
+### Backend
 
 ![Java](https://img.shields.io/badge/Java_8--21-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
@@ -96,13 +42,13 @@ efficiently.
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
 
-### Frontend and mobile development
+### Frontend
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![React](https://img.shields.io/badge/ReactJS-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 
-### Data and integration
+### Data and messaging
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat-square&logo=oracle&logoColor=white)
@@ -244,6 +190,19 @@ advisory locking and `FOR UPDATE SKIP LOCKED` ensure only one replica archives a
 other replicas continue consuming. Logging stays outside the synchronous request path, and body/
 header sanitization prevents credentials, tokens, cookies, and other secrets from being retained.
 
+## Boilerplates
+
+These repositories are built as learning and starter templates:
+
+- [Java Boilerplate](https://github.com/syadziy/java_boilerplate)
+- [Go Boilerplate](https://github.com/syadziy/go_boilerplate)
+- [NestJS Boilerplate](https://github.com/syadziy/nest_boilerplate)
+- [PHP / Laravel Boilerplate](https://github.com/syadziy/php_boilerplate)
+
+Each boilerplate is designed to show a practical service structure with real features such as
+validation, repository/service layering, caching, messaging, containerization, seed data, and demo
+documentation.
+
 ## Platform engineering highlights
 
 - **Security:** multi-tenant RS256 JWT, issuer/audience validation, granular permissions, and
@@ -263,7 +222,15 @@ header sanitization prevents credentials, tokens, cookies, and other secrets fro
 `High-throughput systems` · `Performance optimization` · `Distributed systems` ·
 `Financial technology` · `Fraud detection` · `Observability` · `Developer platforms`
 
-## Current focus
+# Focus areas
+
+- High-volume transaction processing
+- Reconciliation and financial reporting
+- Fraud detection and clustering workflows
+- Service templates and reusable engineering foundations
+- Production observability and operational readiness
+
+## Currently learning
 
 - Exploring machine-learning techniques for fraud clustering and transaction-pattern analysis.
 - Building consistent, reusable foundations for Java, Go, Kafka, and PostgreSQL microservices.
@@ -274,4 +241,9 @@ header sanitization prevents credentials, tokens, cookies, and other secrets fro
 
 ---
 
-Thanks for visiting. Feel free to explore my repositories and follow my work here on GitHub.
+## Contact
+
+- GitHub: [syadziy](https://github.com/syadziy)
+- Location: Depok, Indonesia
+
+If you are visiting this profile, feel free to explore the featured repositories and boilerplates.
