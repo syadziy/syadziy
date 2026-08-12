@@ -3,7 +3,7 @@
 # Hi, I'm Arfin Syadziy Bairuha 👋
 
 Senior backend engineer based in Depok, Indonesia, with a strong focus on Java, distributed
-systems, financial reporting, reconciliation, and production-ready service design.
+systems, high-volume transaction processing, financial reporting, reconciliation, and production-ready service design.
 
 I enjoy turning complex operational requirements into maintainable software that stays observable, use resources efficiently, and reliable under heavy traffic.
 
@@ -256,7 +256,7 @@ documentation.
 
 ## Engineering interests
 
-`High-throughput systems` · `Performance optimization` · `Distributed systems` ·
+`High-throughput systems` · `High-volue transactions` · `Performance optimization` · `Distributed systems` ·
 `Financial technology` · `Fraud detection` · `Observability` · `Developer platforms`
 
 # Focus areas
@@ -269,12 +269,11 @@ documentation.
 
 ## Currently learning
 
-- Exploring machine-learning techniques for fraud clustering and transaction-pattern analysis.
 - Building consistent, reusable foundations for Java, Go, Kafka, and PostgreSQL microservices.
 - Developing a permission-aware multi-tenant operations platform with centralized auditing,
   request/response logging, scheduling, alert delivery, and realtime monitoring.
-- Expanding my backend engineering experience into Go, NestJS, NoSQL data stores and cloud-native service development.
-- Expanding my AI engineering practice to improve the software development lifecycle.
+- Expanding my backend engineering experience into Go, NestJS, PHP, NoSQL data stores and cloud-native service development.
+- Expand AI-assisted development workflows.
 
 ---
 
