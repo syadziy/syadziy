@@ -113,6 +113,43 @@ API Gateway ---- audit events --------> Kafka ----> Audit Log
 
 ### [User Management](https://github.com/syadziy/usermanagement)
 
+Multi-tenant identity and authorization service built with Java. It provides tenant onboarding,
+authentication, RBAC/permission control, JWT issuance, and audit-friendly login flows.
+
+### [Control Room Web App](https://github.com/syadziy/web_app)
+
+React-based operations dashboard for identity, scheduler, centralized alerting, and audit log
+management through a single API Gateway.
+
+### [API Gateway](https://github.com/syadziy/api_gateway)
+
+Reactive gateway for routing, security enforcement, rate limiting, resilience, and centralized
+request/response handling.
+
+### [Centralized Alert](https://github.com/syadziy/centralized_alert)
+
+Alert delivery service for REST and Kafka workflows, built for retry, idempotency, and operational
+visibility.
+
+### [Scheduler](https://github.com/syadziy/scheduler)
+
+Task scheduler with durable execution, retry, history, and safe concurrency across replicas.
+
+### [Audit Log](https://github.com/syadziy/audit_log)
+
+Append-only audit service for Kafka-driven user activity tracking and investigation APIs.
+
+### [Centralized Log](https://github.com/syadziy/centralized_log)
+
+Go-based centralized logging service for API gateway traffic and operational events.
+
+### [SDK Util](https://github.com/syadziy/sdk_util)
+
+Shared Java foundation for response standardization, global exception handling, JWT security,
+structured logging, trace IDs, and application-wide operational conventions.
+
+<!-- ### [User Management](https://github.com/syadziy/usermanagement)
+
 A multi-tenant identity and authorization service built with Java 21 and Spring Boot. It provides
 tenant registration, username/password authentication, tenant-specific token policies, granular
 role-based permissions, and RS256 JWT issuance with discovery metadata and public JWKS. It serves
@@ -188,7 +225,7 @@ records older than 30 days into an archive table using batch-based, concurrency-
 Goroutines run Kafka consumption, health endpoints, and housekeeping independently; PostgreSQL
 advisory locking and `FOR UPDATE SKIP LOCKED` ensure only one replica archives a batch while all
 other replicas continue consuming. Logging stays outside the synchronous request path, and body/
-header sanitization prevents credentials, tokens, cookies, and other secrets from being retained.
+header sanitization prevents credentials, tokens, cookies, and other secrets from being retained. -->
 
 ## Boilerplates
 
