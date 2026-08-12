@@ -277,7 +277,7 @@ documentation.
 
 ---
 
-## Contact
+# Contact
 
 - GitHub: [syadziy](https://github.com/syadziy)
 - Location: Depok, Indonesia
